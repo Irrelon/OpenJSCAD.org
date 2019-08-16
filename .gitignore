@@ -7,3 +7,4 @@ packages/web/package-lock.json
 packages/core/package-lock.json
 packages/desktop/package-lock.json
 *.log
+.idea
