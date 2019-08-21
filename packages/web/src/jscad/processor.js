@@ -527,6 +527,9 @@ Processor.prototype = {
       this.enableItems()
     }
   },
+  
+  // Export the internal function we require at the top of this file
+  _generateOutputFile: generateOutputFile,
 
   generateOutputFile: function () {
     this.clearOutputFile()

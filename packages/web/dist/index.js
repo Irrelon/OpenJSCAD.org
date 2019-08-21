@@ -93563,6 +93563,9 @@ Processor.prototype = {
     }
   },
 
+  // Export the internal function we require at the top of this file
+  _generateOutputFile: _generateOutputFile,
+
   generateOutputFile: function generateOutputFile() {
     this.clearOutputFile();
     var blob = this.currentObjectsToBlob();
@@ -95083,6 +95086,10 @@ var getCode = function getCode() {
   return getSourceFromEditor(gEditor);
 };
 
+var getProcessor = function getProcessor() {
+  return gProcessor;
+};
+
 window.JSCAD = {
   editor: {
     putSourceInEditor: putSourceInEditor,
@@ -95091,6 +95098,7 @@ window.JSCAD = {
     getCode: getCode,
     setCode: setCode
   },
+  getProcessor: getProcessor,
   init: init
 };
 

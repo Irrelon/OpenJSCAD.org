@@ -28,7 +28,7 @@ module.exports = function (self) {
           })
 
         if (objects.length === 0) {
-          throw new Error('The JSCAD script must return one or more CSG or CAG solids.')
+          //throw new Error('The JSCAD script must return one or more CSG or CAG solids.')
         }
         self.postMessage({cmd: 'rendered', objects})
       }

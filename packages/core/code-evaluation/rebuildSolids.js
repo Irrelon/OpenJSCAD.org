@@ -36,7 +36,7 @@ function rebuildSolids (script, fullurl, parameters, callback, options) {
         let objects = func(parameters, include, globals)
         objects = toArray(objects)
         if (objects.length === 0) {
-          throw new Error('The JSCAD script must return one or more CSG or CAG solids.')
+          //throw new Error('The JSCAD script must return one or more CSG or CAG solids.')
         }
         callback(undefined, objects)
       } catch (error) {

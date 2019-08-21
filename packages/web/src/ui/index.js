@@ -253,6 +253,10 @@ const getCode = () => {
   return getSourceFromEditor(gEditor);
 };
 
+const getProcessor = () => {
+  return gProcessor;
+};
+
 window.JSCAD = {
   editor: {
     putSourceInEditor,
@@ -261,5 +265,6 @@ window.JSCAD = {
     getCode,
     setCode
   },
+  getProcessor,
   init
 };
